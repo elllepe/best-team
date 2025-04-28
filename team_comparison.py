@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import networkx as nx
+#import networkx as nx
 
 # Load your Excel data and create the graph
 df = pd.read_excel('afl-2025-UTC.xlsx')  # Make sure the file is in the same directory

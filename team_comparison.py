@@ -44,4 +44,16 @@ if uploaded_file is not None:
                 path_description.append(f"{path[i]} beat {path[i + 1]};\n")  # Adding each matchup to the list
                
             # Add the conclusion
-            path_description.append(f"Therefore, {my_t
+            path_description.append(f"Therefore, {my_team} are better than {your_team}!")
+
+        else:
+            # If no path is found
+            path_description = [f"{my_team} is not better than {your_team}"]
+
+        # Display the final message
+        st.write("\n".join(path_description))  # Join the list into a string with newlines and display it
+
+    else:
+        st.write("Please select valid teams that exist in the graph.")
+else:
+    st.write("Please upload an Excel file to proceed.")

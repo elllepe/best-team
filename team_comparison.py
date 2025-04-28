@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import openpyxl
 
 # Set up the Streamlit app UI
 st.title('Is Your Team Better Than Another?')

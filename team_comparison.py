@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import networkx as nx
 
 # Set up the Streamlit app UI
 st.title('Is Your Team Better Than Another?')
